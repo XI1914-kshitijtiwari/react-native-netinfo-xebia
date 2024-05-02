@@ -31,7 +31,7 @@ apply plugin: 'com.android.library'
 android {
   compileSdkVersion getExtOrIntegerDefault('compileSdkVersion')
 
-  def agpVersion = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION
+  def agpVersion = com.android.builder.model.Version.ANDROID_GRADLE_PLUGIN_VERSION
   // Check AGP version for backward compatibility reasons
   if (agpVersion.tokenize('.')[0].toInteger() >= 7) {
     namespace = "com.reactnativecommunity.netinfo"
